@@ -1,4 +1,3 @@
-console.log("DevTrack JavaScript loaded");
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-app.js";
 
 import {
@@ -9,6 +8,8 @@ import {
     deleteDoc,
     doc
 } from "https://www.gstatic.com/firebasejs/12.4.0/firebase-firestore.js";
+
+console.log("DevTrack JavaScript loaded");
 
 const firebaseConfig = {
     apiKey: "AIzaSyBj4U-m26t98xnxJ_YxyG5LVcYJqJRGdVE",
@@ -45,7 +46,7 @@ menuBtn.addEventListener("click", () => {
     navMenu.classList.toggle("active");
 });
 
-document.querySelectorAll(".nav-link").forEach(link => {
+document.querySelectorAll("#navMenu a").forEach(link => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("active");
     });

@@ -527,7 +527,7 @@ footer {
         gap: 18px;
     }
 
-    nav.show {
+    nav.active {
         display: flex;
     }
 
