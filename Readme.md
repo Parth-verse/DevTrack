@@ -51,3 +51,16 @@ The application can add, read and delete project data from the Firestore databas
 * GitHub repository links
 * Online deployment
 
+## Screenshots
+
+### Home
+
+![DevTrack Home](images/home.png)
+
+### Projects
+
+![DevTrack Projects](images/projects.png)
+
+### Firebase
+
+![Firebase Data](images/firebase.png)
