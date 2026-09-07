@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTrack | Developer Workspace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#home" class="logo">DevTrack</a>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+
+        <nav id="navMenu">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="small-title">YOUR PERSONAL DEV SPACE</p>
+                <h1>Build.<br>Track.<br><span>Improve.</span></h1>
+
+                <p class="hero-text">
+                    Keep your coding projects, progress and learning goals
+                    organised in one simple workspace.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="main-btn">View Projects</a>
+                    <a href="#about" class="text-btn">Learn More →</a>
+                </div>
+            </div>
+
+            <div class="terminal">
+                <div class="terminal-head">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <p>devtrack</p>
+                </div>
+
+                <div class="terminal-body">
+                    <p><b>$</b> devtrack status</p>
+                    <br>
+                    <p>Projects........ <strong>08</strong></p>
+                    <p>Completed....... <strong>05</strong></p>
+                    <p>In Progress..... <strong>03</strong></p>
+                    <p>Technologies.... <strong>12</strong></p>
+                    <br>
+                    <p class="success">✓ Keep building.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div>
+                <h2>08</h2>
+                <p>Projects</p>
+            </div>
+
+            <div>
+                <h2>05</h2>
+                <p>Completed</p>
+            </div>
+
+            <div>
+                <h2>12</h2>
+                <p>Technologies</p>
+            </div>
+
+            <div>
+                <h2>03</h2>
+                <p>In Progress</p>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="section-heading">
+                <p>01 — ABOUT</p>
+                <h2>A better way to<br>manage your learning.</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        DevTrack is a simple developer workspace designed for
+                        students and beginner developers.
+                    </p>
+
+                    <p>
+                        Instead of keeping project ideas, technologies and
+                        progress scattered across notes, DevTrack brings
+                        everything together in one place.
+                    </p>
+
+                    <p>
+                        The goal is simple: build more projects, stay
+                        consistent and see how far you have come.
+                    </p>
+                </div>
+
+                <div class="about-box">
+                    <div class="about-number">01</div>
+                    <h3>Track your work</h3>
+                    <p>
+                        Keep a clear record of what you are building and
+                        what still needs to be completed.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <span>01</span>
+                <h3>Track Projects</h3>
+                <p>
+                    Manage your personal and academic projects from one
+                    simple dashboard.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span>02</span>
+                <h3>Monitor Progress</h3>
+                <p>
+                    See which projects are completed and which ones are
+                    still in progress.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <span>03</span>
+                <h3>Learn Better</h3>
+                <p>
+                    Record the technologies you use and discover areas
+                    where you can improve.
+                </p>
+            </div>
+        </section>
+
+        <section class="project-section" id="projects">
+            <div class="section-heading project-heading">
+                <p>02 — PROJECTS</p>
+                <h2>Things I'm<br>building.</h2>
+            </div>
+
+            <div class="project-controls">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search projects..."
+                >
+
+                <select id="filterSelect">
+                    <option value="all">All Projects</option>
+                    <option value="completed">Completed</option>
+                    <option value="progress">In Progress</option>
+                </select>
+            </div>
+
+            <div class="project-grid" id="projectGrid">
+
+                <div class="project-card" data-status="completed">
+                    <div class="project-top">
+                        <span class="project-tag">WEB</span>
+                        <span class="status completed">Completed</span>
+                    </div>
+
+                    <h3>Weather App</h3>
+
+                    <p>
+                        A responsive weather application that displays
+                        current weather information.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-status="completed">
+                    <div class="project-top">
+                        <span class="project-tag">JAVASCRIPT</span>
+                        <span class="status completed">Completed</span>
+                    </div>
+
+                    <h3>Task Manager</h3>
+
+                    <p>
+                        A simple task management application for organising
+                        daily activities.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-status="progress">
+                    <div class="project-top">
+                        <span class="project-tag">REACT</span>
+                        <span class="status progress">In Progress</span>
+                    </div>
+
+                    <h3>DevTrack</h3>
+
+                    <p>
+                        A personal developer workspace for tracking projects
+                        and learning progress.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>React</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-status="progress">
+                    <div class="project-top">
+                        <span class="project-tag">AI</span>
+                        <span class="status progress">In Progress</span>
+                    </div>
+
+                    <h3>Study Assistant</h3>
+
+                    <p>
+                        An AI-based idea for helping students organise their
+                        study material.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>Python</span>
+                        <span>AI</span>
+                        <span>API</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="no-results" id="noResults">No projects found.</p>
+
+            <div class="add-project">
+                <h3>Add a project</h3>
+
+                <form id="projectForm">
+                    <input
+                        type="text"
+                        id="projectName"
+                        placeholder="Project name"
+                        required
+                    >
+
+                    <select id="projectStatus">
+                        <option value="completed">Completed</option>
+                        <option value="progress">In Progress</option>
+                    </select>
+
+                    <input
+                        type="text"
+                        id="projectTech"
+                        placeholder="Technologies"
+                        required
+                    >
+
+                    <button type="submit">Add Project</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="section-heading">
+                <p>03 — CONTACT</p>
+                <h2>Let's build<br>something.</h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>
+                        Have an idea, project or collaboration in mind?
+                        Send a message.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span>Email</span>
+                        <p>hello@devtrack.com</p>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span>Location</span>
+                        <p>India</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email"
+                        required
+                    >
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Your message"
+                        required
+                    ></textarea>
+
+                    <button type="submit">Send Message</button>
+
+                    <p id="formMessage"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="cta">
+            <p>READY TO START?</p>
+            <h2>Turn ideas into<br>projects.</h2>
+            <a href="#projects">Start Building →</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 DevTrack</p>
+        <p>Built with HTML, CSS & JavaScript</p>
+    </footer>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
