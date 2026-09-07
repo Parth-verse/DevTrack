@@ -51,28 +51,27 @@ The application can add, read and delete project data from the Firestore databas
 * GitHub repository links
 * Online deployment
 
+
 ## Preview
 
 ### Home Page
 
-![DevTrack Home](Home.png)
+![DevTrack Home](Images/Home.png)
 
 ---
 
 ### About Page
 
-![DevTrack About](About.png)
+![DevTrack About](Images/About.png)
 
 ---
 
 ### Projects Page
 
-![DevTrack Projects](Project.png)
+![DevTrack Projects](Images/Projects.png)
 
 ---
 
 ### Contact Page
 
-![DevTrack Contact](Contact.png)
-
----
+![DevTrack Contact](Images/Contact%20.png)
